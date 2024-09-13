@@ -1,0 +1,29 @@
+
+#paragrafo{
+    text-align: center;
+    color: cadetblue;
+}
+#listas{
+    color: cadetblue;
+    text-align: left;
+}
+*{
+    background-color: pink;
+}
+#formulario{
+    color: black;
+    text-align: left;
+    
+}
+#midia{
+    text-align: center;
+    height: 1px;
+    
+}
+#section{
+    background-color: cadetblue;
+    text-align: center;
+}
+#tabela{
+    color:cadetblue;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    
+        <title>Document</title>
+    </head>
+    <body>
+    <!--Cabeçalho da Página-->
+    <header>
+        <h1>Explorando recursos em HTML5</h1>
+    <!--Navegação com links âncora para diferentes seções-->
+    <nav>
+        <ul>
+            <li><a href="#paragrafo">Parágrafos</a><br> </li>
+            <li><a href="#listas">Listas</a><br></li>
+            <li><a href="#tabela">Tabelas</a><br></li>
+            <li><a href="#formulario">Formulário</a><br></li>
+            <li><a href="#midia">Mídia</a></li>
+        </ul>
+    </nav>
+        </header>
+
+    <!--Primeira seção: Demonstrar paragráfos e formatação de texto-->
+        <section id="paragrafo">
+            <h2>Paragráfos e Formatação de Texto</h2>
+        <!--um paragráfo simples-->
+            <p>Este é um paragráfo básico. O elemento <code>&lt;p&gt;</code> é usado para criar parágrafos em HTML</p>
+
+            <!--Texto em negrito e itálico-->
+            <p><strong>Texto em Negrito</strong> pode ser criado com o elemento <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>.</p>
+            <p><em> Texto em Itálico</em> pode ser criado o elemento <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</p>
+            
+            <!--Linha horizontal-->
+            <hr>
+            <p>Esta linha horizontal foi criada com o elemento <code>&lt;hr&gt;</code>, que é usado para separar seções de conteúdo.</p>
+        </section>
+
+        <!--Segunda seção: Listas Ordenadas e Listas não ordenadas-->
+        <section id="listas">
+            <h2>Listas</h2>
+            <!--Lista não ordenada-->
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p>A lista acima é uma <strong>lista não ordenada</strong>, criada com <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code>.</p>
+
+            <!--Lista ordenada-->
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <p>A lista acima é uma <strong>lista ordenada</strong>, criada com <code>&lt;ol&gt;</code> e <code>&lt;li&gt;</code>.</p>
+        </section>
+
+        <!--Terceira seção: Tabela básica-->
+        <section id="tabela">
+            <h2>Tabela</h2>
+            <table border="1">
+                <caption>Exemplo de Tabela</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jacques</td>
+                        <td>29</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>28</td>
+                        <td>Historiadora</td>
+                    </tr>
+                    <tr>
+                        <td>Telma</td>
+                        <td>46</td>
+                        <td>Professora</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Esta tabela é criada com o elemento <code>&lt;table&gt;</code>. Os cabeçalhos são definifos com <code>&lt;th&gt;</code> e as células com o <code>&lt;td&gt;</code>.</p>
+        </section>
+        <!--Quarta seção: Formulário-->
+        <section id="formulario">
+            <br>
+            <br>
+            <h2>Formulário</h2>
+            <form action="#" method="post">
+                <!--Campo de texto-->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <!--Campo de email-->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <!--Caixa de Seleção (checkbox)-->
+                <label for="aceito"> Aceito os Termos</label>
+                <input type="checkbox" id="aceito" name="aceito"><br><br>
+
+                <!--Botão de Envio-->
+                <input type="submit" value="Enviar">
+            </form>
+            <p>Este formulário contém diferentes tipos de entradas de dados, como <code>&lt;input&gt;</code>e <code>&lt;label&gt;</code>.</p>
+        </section>
+
+        <!--Quinta seção: Mídias (Imagens e Vídeo)-->
+        <section id="midia">
+            <h2>Mídia</h2>
+            <h3>Imagem</h3>
+            
+            <img src="../Imagens/gustavo lima.png" alt="Descrição">
+            <p>Esta imagem é inserida com o elemento <code>&lt;img&gt;</code>, que requer o atributo<code>src</code> para o camino da imagem e <code>alt</code> para a descrição alternativa.</p>
+            
+            <!--Vídeo-->
+            <h3>Vídeo</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_67ak1R1wsc?si=bZnvqjyVP4cctoMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video controls with="250">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <p>O vídeo acima é incorporado usando o elemento <code>&lt;video&gt;</code> e a fonte de vídeo é definida <code>&lt;source&gt;</code>.</p>
+        </section>
+        
+        <!--Rodapé da Página-->
+        <footer>
+            <p>&copy; 2024 - Desenvolvido por Kauan Garcia de Almeida </p>
+        </footer>
+    </body>
+</html>
